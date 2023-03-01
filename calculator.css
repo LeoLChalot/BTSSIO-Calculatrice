@@ -1,0 +1,80 @@
+.calculator {
+    box-sizing: border-box;
+    padding: 12px;
+    width: 500px;
+    height: 540px;
+    background-color: brown;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 12vh;
+} 
+
+.output {
+    max-width: 470px;
+    border-radius: 10px;
+    height: 56px;
+    margin: 8px 8px 18px;
+    background: linear-gradient(rgb(218, 218, 218), rgb(255, 195, 105));
+    border: solid 1px white;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: darkred;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 80px);
+    color: white;
+}
+ 
+.keys div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: solid 1px white;
+    margin: 0px 4px 8px 4px;
+    transition: background-color 0.5s ease;
+}
+
+.operations {
+    background-color: rgb(238, 172, 65);
+}
+
+.keys div:hover {
+    background-color: rgb(199, 70, 0);
+}
+
+#key-0 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+}
+
+.key-op {
+    background-color: rgb(238, 127, 0);
+}
+
+#comma {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+#submit {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+#multiple {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#substract {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#add {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
